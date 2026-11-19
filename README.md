@@ -1,3 +1,4 @@
+
 # PokeMarket
 
 E-commerce de cartas sueltas y cajas selladas de Pokémon, hecho con React + Vite.
@@ -26,3 +27,5 @@ npm run dev
 - Repositorio: _(completar)_
 - Sitio publicado: _(completar)_
 .
+
+
