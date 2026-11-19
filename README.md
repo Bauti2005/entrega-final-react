@@ -1,16 +1,27 @@
-# React + Vite
+# PokeMarket
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+E-commerce de cartas sueltas y cajas selladas de Pokémon, hecho con React + Vite.
 
-Currently, two official plugins are available:
+## Funcionalidades
+- Catálogo con búsqueda en tiempo real y paginador
+- Detalle de producto y carrito de compras (Context API)
+- Registro e inicio de sesión (Firebase Authentication)
+- Panel de gestión (CRUD de productos en Firestore), solo para el administrador
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Acceso al panel de gestión (admin)
+- Ruta: `/admin`
+- Usuario: `admin@gmail.com`
+- Contraseña: `admin123`
 
-## React Compiler
+## Tecnologías
+React, Vite, React Router DOM, Context API, Firebase (Auth + Firestore), CSS nativo.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Instalación
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Deploy
+- Repositorio: _(completar)_
+- Sitio publicado: _(completar)_

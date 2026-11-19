@@ -2,10 +2,18 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Layout from './components/Layout';
 import ItemListContainer from './components/ItemListContainer';
 import DetalleProducto from './components/DetalleProducto';
-import Carrito from './components/Carrito'; // <-- Acá importamos el Carrito nuevo
+import Carrito from './components/Carrito';
+import CarritoProvider from './context/CarritoProvider';
+import AuthProvider from './context/AuthProvider';
+import Login from './components/Login';
+import Registro from './components/Registro';
+import Admin from './components/Admin';
+import RutaProtegida from './components/RutaProtegida';
 
 function App() {
   return (
+    <AuthProvider>
+    <CarritoProvider>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -37,10 +45,23 @@ function App() {
           
           {/* RUTA CARRITO ACTUALIZADA */}
           <Route path="carrito" element={<Carrito />} />
+
+          {/* AUTENTICACIÓN */}
+          <Route path="login" element={<Login />} />
+          <Route path="registro" element={<Registro />} />
+
+          {/* PANEL DE GESTIÓN: solo el admin */}
+          <Route path="admin" element={
+            <RutaProtegida soloAdmin>
+              <Admin />
+            </RutaProtegida>
+          } />
           
         </Route>
       </Routes>
     </BrowserRouter>
+    </CarritoProvider>
+    </AuthProvider>
   );
 }
 
