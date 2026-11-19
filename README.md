@@ -24,8 +24,9 @@ npm run dev
 ```
 
 ## Deploy
-- Repositorio: _(completar)_
-- Sitio publicado: _(completar)_
+- Repositorio: https://github.com/Bauti2005/entrega-final-react
+
+- Sitio publicado: https://pre-entrega-react-yk74.vercel.app/
 .
 
 
